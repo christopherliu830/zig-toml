@@ -75,7 +75,7 @@ pub fn intoStruct(ctx: *Context, comptime T: type, dest: *T, table: *Table) SetV
     }
 }
 
-fn setValue(ctx: *Context, comptime T: type, dest: *T, value: *const Value) SetValueError!void {
+pub fn setValue(ctx: *Context, comptime T: type, dest: *T, value: *const Value) SetValueError!void {
     switch (T) {
         Table => {
             dest.* = value.table.*;
