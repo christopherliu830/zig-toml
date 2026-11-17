@@ -49,6 +49,7 @@ pub const DateTime = datetime.DateTime;
 pub const Value = value.Value;
 pub const ValueList = value.ValueList;
 pub const HashMap = struct_mapping.HashMap;
+pub const Context = struct_mapping.Context;
 pub const serialize = @import("serialize/root.zig").serialize;
 
 pub const Position = parser.Position;
